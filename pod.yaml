@@ -5,6 +5,7 @@ metadata:
   label:
     purpose: practise
 spec:
- - name: nginx
-   image: nginx
+ containers:
+  - name: nginx
+    image: nginx
 
