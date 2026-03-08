@@ -6,5 +6,5 @@ metadata:
     purpose: practise
 spec:
  - name: nginx
-   image: nginx:v1
+   image: nginx
 
