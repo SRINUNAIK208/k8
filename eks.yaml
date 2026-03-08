@@ -9,4 +9,4 @@ managedNodeGroups:
  - name: roboshop
    instanceTypes: ["m5.large"]
    desiredCapacity: 2
-   spot: true
+   
