@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deployment-nginx
@@ -11,8 +11,8 @@ spec:
     matchLabels:
       project: roboshop
       env: dev
-template:
-  metadata:
+  template:
+   metadata:
     labels:
      project: roboshop
      env: dev
