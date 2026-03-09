@@ -1,0 +1,40 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: deployment-nginx
+  labels:
+    project: roboshop
+    env: dev
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      project: roboshop
+      env: dev
+template:
+  metadata:
+    labels:
+     project: roboshop
+     env: dev
+  spec:
+   containers:
+    - name: nginx
+      image: nginx
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: deployement-service
+  labels:
+    project: roboshop
+    dev: env
+spec:
+ selector:
+  project: roboshop
+  dev: env
+ ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+
+ 
