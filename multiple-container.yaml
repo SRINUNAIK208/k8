@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: multiple container
+  name: multiple-container
   labels:
     project: roboshop
     purpose: multi conatiner deamon
