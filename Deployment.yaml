@@ -16,10 +16,10 @@ spec:
     labels:
      project: roboshop
      env: dev
-  spec:
-   containers:
-    - name: nginx
-      image: nginx
+   spec:
+    containers:
+     - name: nginx
+       image: nginx
 ---
 apiVersion: v1
 kind: Service
