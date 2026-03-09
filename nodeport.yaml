@@ -5,7 +5,7 @@ metadata:
   labels: 
     purpose: demo-nodeport
 spec:
-  type: nodeport
+  type: NodePort
   selector:
     project: roboshop
     dev: env
