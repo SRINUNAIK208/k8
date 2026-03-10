@@ -3,11 +3,11 @@ kind: ClusterConfig
 
 metadata:
   name: roboshop
-  region: ap-south-1
+  region: us-east-1
 
 managedNodeGroups:
  - name: roboshop
-   instanceTypes: ["M7i-flex.large"]
+   instanceTypes: ["m5.large", "c3.large"]
    desiredCapacity: 3
    spot: true
    
